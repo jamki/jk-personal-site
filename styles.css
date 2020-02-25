@@ -17,6 +17,7 @@ span {
   position: relative;
   margin: 0;
   text-decoration: none;
+  user-select: none;
 }
 
 
@@ -33,7 +34,7 @@ span {
 }
 
 .my-name::after {
-  color: #f0f;
+  color: #ff00ae;
   z-index: -2;
 }
 
@@ -93,10 +94,26 @@ footer ul {
 }
 
 footer li {
+  font-size: 24px;
   line-height: 1.8em;
 }
 
 a,
 a:visited {
   color: #0026a7;
+  text-decoration: none;
+}
+
+.funky-link {
+  background-image: linear-gradient( transparent 0%, transparent calc(50% - 9px), rgba(255, 0, 175, 0.35) calc(50% - 9px), rgba(255, 0, 175, 0.35) 100% );
+  background-position: 0 0;
+  background-size: 100% 200%;
+  transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+  word-break: break-word;
+}
+
+.funky-link:hover,
+.funky-link:focus {
+  background-image: linear-gradient( transparent 0%, transparent calc(50% - 9px), rgba(255, 0, 175, 1) calc(50% - 9px), rgba(255, 0, 175, 1) 100% );
+  background-position: 0 100%;
 }
