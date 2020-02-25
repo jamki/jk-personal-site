@@ -1,21 +1,19 @@
 html {
   background: #fff1e5;
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
   color: #0026a7;
   font-family: 'Playfair Display', serif;
-  margin-top: 40px;
-  padding: 40px;
 }
 
 span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 .my-name {
-  cursor: pointer;
   position: relative;
   margin: 0;
   text-decoration: none;
@@ -79,4 +77,21 @@ span {
   to {
     transform: translate(0)
   }
+}
+
+/* Layout */
+header,
+footer {
+  margin: 40px 0;
+  padding: 40px;
+}
+
+footer ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer li {
+  line-height: 1.8em;
 }
