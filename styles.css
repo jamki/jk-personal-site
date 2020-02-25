@@ -14,8 +14,8 @@ span {
 }
 
 .my-name {
-  position: relative;
   margin: 0;
+  position: relative;
   text-decoration: none;
   user-select: none;
 }
@@ -23,14 +23,14 @@ span {
 
 .my-name::before,
 .my-name::after {
-  display: block;
   content: 'JAMES KIMPTON';
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: .8;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
-  opacity: .8;
 }
 
 .my-name::after {
@@ -114,6 +114,6 @@ a:visited {
 
 .funky-link:hover,
 .funky-link:focus {
-  background-image: linear-gradient( transparent 0%, transparent calc(50% - 9px), rgba(255, 0, 175, 1) calc(50% - 9px), rgba(255, 0, 175, 1) 100% );
+  background-image: linear-gradient( transparent 0%, transparent calc(50% - 9px), rgba(255, 0, 175, 0.55) calc(50% - 9px), rgba(255, 0, 175, 0.55) 100% );
   background-position: 0 100%;
 }
