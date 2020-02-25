@@ -1,0 +1,82 @@
+html {
+  background: #fff1e5;
+}
+
+h1 {
+  color: #0026a7;
+  font-family: 'Playfair Display', serif;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.my-name {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+.my-name::before,
+.my-name::after {
+  display: block;
+  content: 'JAMES KIMPTON';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+}
+
+.my-name::after {
+  color: #f0f;
+  z-index: -2;
+}
+
+.my-name::before {
+  color: #0ff;
+  z-index: -1;
+}
+
+.my-name:hover.my-name::before {
+  animation: glitch-left .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+.my-name:hover.my-name::after {
+  animation: glitch-left-2 .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+}
+
+@keyframes glitch-left {
+  0% {
+    transform: translate(0)
+  }
+  33% {
+    transform: translate(-5px, 3px)
+  }
+  66% {
+    transform: translate(5px, -3px)
+  }
+  to {
+    transform: translate(0)
+  }
+}
+@keyframes glitch-left-2 {
+  0% {
+    transform: translate(0)
+  }
+  33% {
+    transform: translate(-5px, -3px)
+  }
+  66% {
+    transform: translate(5px, 2px)
+  }
+  to {
+    transform: translate(0)
+  }
+}
