@@ -95,3 +95,8 @@ footer ul {
 footer li {
   line-height: 1.8em;
 }
+
+a,
+a:visited {
+  color: #0026a7;
+}
